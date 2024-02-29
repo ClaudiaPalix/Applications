@@ -1,0 +1,71 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.Applications{
+  box-shadow: 0px 1px 8px 0px rgba(0,0,0,.1);
+  padding: 30px 30px;
+  border-radius: 10px;
+}
+.Applications h4{
+  color: #0b2866;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding: 0 10px;
+}
+.Applications h4 a{
+  color: #0b2866;
+  font-size: 15px;
+  font-weight: normal;
+  cursor: pointer;
+  text-decoration: none;
+}
+.Applications h4 a:hover {
+  text-decoration: underline!important;
+}
+.FieldBox img{
+  width: 20px;
+}
+.FieldBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(0,0,0,0.1);
+  margin-top: 15px;
+  padding: 12px 10px 12px 20px;
+  border-radius: 44px;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+.FieldBox:hover{
+  background-color: #0b2866;
+
+}
+.FieldBox:hover h6{
+  color: #fff;
+}
+.FieldBox:hover img{
+  filter: brightness(0) invert(1); 
+}
+.FieldBox h6{
+  margin-bottom: 0;
+  color: #333;
+  transition: .3s ease-in-out;
+}
+
+@media screen and (max-width:567px) {
+  .Applications{
+    padding: 30px 15px;
+  }
+}
+@media screen and (max-width:420px) {
+  .FieldBox h6{
+    font-size: 15px;
+  }
+  .Applications h4{
+    font-size: 20px;
+  }
+  .Applications h4 a{
+    font-size: 14px;
+  }
+}
